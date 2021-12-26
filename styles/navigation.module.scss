@@ -1,0 +1,16 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 124px;
+  grid-column: 1/-1;
+
+  .links {
+    display: flex;
+    column-gap: 40px;
+  }
+
+  .item {
+    @include body-text-2;
+    text-transform: capitalize;
+  }
+}

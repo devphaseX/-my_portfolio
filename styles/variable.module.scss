@@ -1,0 +1,48 @@
+//colour and background colour
+$background-colour: #fcf9f2;
+$cream-yellow: #f3ff9e;
+
+//text and font format
+@mixin header-1 {
+  font-size: 81px;
+  line-height: 1.5;
+  font-weight: lighter;
+}
+
+@mixin header-2 {
+  font-size: 81px;
+  line-height: 1;
+  font-weight: lighter;
+}
+
+@mixin header-3 {
+  font-size: 64px;
+  line-height: 72px;
+  font-weight: lighter;
+}
+
+@mixin body-text-1 {
+  font-size: 34px;
+  line-height: 64px;
+  font-weight: normal;
+}
+
+@mixin body-text-2 {
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: normal;
+}
+
+@mixin body-text-3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: lighter;
+}
+
+//grid
+
+@mixin layoutGrid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 16px;
+}
