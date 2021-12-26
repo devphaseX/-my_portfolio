@@ -21,5 +21,5 @@ export default function Home() {
 }
 
 export function getStaticProps() {
-  return {};
+  return { props: {} };
 }
