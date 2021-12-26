@@ -31,7 +31,9 @@ const Navigation: FC = () => {
             key={handle.profileUrl}
             className={style.item}
           >
-            <a href={handle.profileUrl}>{handle.name}.</a>
+            <a href={handle.profileUrl} target="_blank">
+              {handle.name}.
+            </a>
           </li>
         ))}
       </ul>
