@@ -5,9 +5,18 @@ import style from '../../styles/navigation.module.scss';
 type MediaContact = { name: string; profileUrl: string };
 
 const socialHandles: Array<MediaContact> = [
-  { name: 'Github', profileUrl: '' },
-  { name: 'Twitter', profileUrl: '' },
-  { name: 'Linkedin', profileUrl: '' },
+  {
+    name: 'Github',
+    profileUrl: 'https://github.com/devphaseX',
+  },
+  {
+    name: 'Twitter',
+    profileUrl: 'https://www.twitter.com/iamayomidee',
+  },
+  {
+    name: 'Linkedin',
+    profileUrl: 'https://www.linkedin.com/in/devphasex/',
+  },
 ];
 
 const Navigation: FC = () => {
