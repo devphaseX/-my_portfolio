@@ -9,7 +9,9 @@ const gitContact = socialHandles.find(
 const About: FC = () => {
   return (
     <div className="about">
-      <h2 className="tag">More About Me</h2>
+      <h2 className="tag">
+        About me<sup>*</sup>
+      </h2>
       <p className="info">
         I am Ayomide, Fullstack web developer based in
         Lagos, Nigeria.I am passionate about building web
