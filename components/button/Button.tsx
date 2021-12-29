@@ -1,16 +1,27 @@
+import Link from 'next/link';
 import { FC, ReactNode } from 'react';
-import '../../styles/home.module.scss';
 
 interface ButtonProps {
   href: string;
   children: ReactNode;
+  innerRoute?: boolean;
 }
 
-const Button: FC<ButtonProps> = ({ href, children }) => {
-  return (
+const Button: FC<ButtonProps> = ({
+  href,
+  children,
+  innerRoute,
+}) => {
+  let unwrappedLinkElement = (
     <a href={href} className="button">
-      {children}
+      <span className="bt-pm-ct">{children}</span>
+      <span className="bt-sc-bg"></span>
     </a>
+  );
+  return innerRoute ? (
+    <Link href={href}>{unwrappedLinkElement}</Link>
+  ) : (
+    unwrappedLinkElement
   );
 };
 

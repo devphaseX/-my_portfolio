@@ -1,6 +1,10 @@
 import { FC } from 'react';
-import '../../styles/home.module.scss';
 import Button from '../button/Button';
+import { socialHandles } from '../navigation/Navigation';
+
+const gitContact = socialHandles.find(
+  (handle) => handle.name.toLowerCase() === 'github'
+);
 
 const About: FC = () => {
   return (
@@ -17,7 +21,11 @@ const About: FC = () => {
       </p>
       <div className="about-contact">
         <Button href="">Download Resume</Button>
-        <Button href="">Check github</Button>
+        <Button
+          href={gitContact ? gitContact.profileUrl : ''}
+        >
+          Check github
+        </Button>
       </div>
     </div>
   );

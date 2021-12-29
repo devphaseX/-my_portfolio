@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import Navigation from '../navigation/Navigation';
+import ArrowRightIcon from '../icons/ArrowRightIcon';
 
 const Footer: FC = () => {
   return (
@@ -13,11 +14,13 @@ const Footer: FC = () => {
       </p>
       <div className="contact">
         <a>
-          <span></span>
+          <span>
+            <ArrowRightIcon />
+          </span>
           <span>Wilsonace87@gmail.com</span>
         </a>
       </div>
-      <Navigation />
+      <Navigation type="footer" />
     </footer>
   );
 };
