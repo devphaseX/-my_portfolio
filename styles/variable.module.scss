@@ -89,10 +89,13 @@ $cream-yellow: #f3ff9e;
 }
 
 @mixin tablet-portrait {
-  // @media (max-width: 102.4em) {
-  //   @content;
-  // }
   @include responsive(102.4em, portrait) {
+    @content;
+  }
+}
+
+@mixin smaller-smartphone-portrait {
+  @include responsive(41.4em, portrait) {
     @content;
   }
 }

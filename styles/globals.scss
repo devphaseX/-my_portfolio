@@ -46,13 +46,13 @@ body {
   background-color: $background-colour;
   position: relative;
 
+  @include tablet-portrait {
+    padding-inline: 64px;
+  }
+
   @include smartphone-portrait {
     padding-inline: 24px;
     padding-top: 40px;
-  }
-
-  @include tablet-portrait {
-    padding-inline: 64px;
   }
 }
 
@@ -122,6 +122,10 @@ body {
   @include tablet-portrait {
     font-size: 5.4rem;
   }
+
+  @include smaller-smartphone-portrait {
+    font-size: 3.6rem;
+  }
 }
 
 .tag {
@@ -149,16 +153,17 @@ body {
     @include body-text-1;
     margin-bottom: 296px;
     margin-top: 196px;
-    @include smartphone-portrait {
-      grid-column: 1/-1;
-      margin-top: 96px;
-      margin-bottom: 196px;
-    }
 
     @include tablet-portrait {
       grid-column: 1/-1;
       font-size: 2.4rem;
       margin-bottom: 240px;
+    }
+
+    @include smartphone-portrait {
+      grid-column: 1/-1;
+      margin-top: 96px;
+      margin-bottom: 196px;
     }
   }
   .about-contact {
@@ -174,15 +179,15 @@ body {
       align-items: center;
     }
 
+    @include tablet-portrait {
+      @include column-arranged;
+      row-gap: 124px;
+    }
+
     @include smartphone-portrait {
       @include column-arranged;
       row-gap: 96px;
       margin-bottom: 196px;
-    }
-
-    @include tablet-portrait {
-      @include column-arranged;
-      row-gap: 124px;
     }
   }
 }
@@ -245,17 +250,22 @@ body {
     @include body-text-1;
     font-weight: lighter;
 
-    @include smartphone-portrait {
-      margin-top: 80px;
-    }
     @include tablet-portrait {
       margin-top: 96px;
       font-size: 2.4rem;
+    }
+
+    @include smartphone-portrait {
+      margin-top: 80px;
     }
   }
 
   .contact {
     margin-block: 80px 116px;
+
+    @include tablet-portrait {
+      margin-block: 64px 116px;
+    }
 
     @include smartphone-portrait {
       margin-block: 24px 96px;
@@ -264,10 +274,6 @@ body {
           height: 12px;
         }
       }
-    }
-
-    @include tablet-portrait {
-      margin-block: 64px 116px;
     }
 
     a {
@@ -279,6 +285,12 @@ body {
       @include smartphone-portrait {
         span:first-child {
           margin-right: 2px;
+        }
+      }
+
+      @include smaller-smartphone-portrait {
+        span:last-child {
+          font-size: 1.8rem;
         }
       }
     }
@@ -308,8 +320,8 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: $background-colour;
   z-index: 10;
   display: flex;
@@ -318,7 +330,7 @@ body {
 }
 
 .modalOpen {
-  transform: translateX(0);
+  display: block;
   visibility: 1;
 
   & + span {
@@ -352,6 +364,6 @@ body {
 }
 
 .modalclose {
-  transform: translateX(100%);
+  display: none;
   visibility: 0;
 }
