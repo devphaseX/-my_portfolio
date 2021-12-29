@@ -1,5 +1,4 @@
 import { FC } from 'react';
-// import '../../styles/globals.scss'
 
 const Heroes: FC = () => {
   return (
