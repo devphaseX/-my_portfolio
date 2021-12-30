@@ -13,7 +13,7 @@ const Footer: FC = () => {
         drop a line
       </p>
       <div className="contact">
-        <a>
+        <a href="mailTo:wilsonace87@gmail.com">
           <span>
             <ArrowRightIcon />
           </span>

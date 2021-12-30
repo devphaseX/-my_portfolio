@@ -78,7 +78,7 @@ body {
   }
 
   @include smartphone-portrait {
-    .item:first-of-type {
+    & > .item {
       font-size: 1.8rem;
     }
   }
@@ -199,7 +199,6 @@ body {
   @include body-text-4;
   font-size: 18px;
   text-transform: uppercase;
-  z-index: 2000;
 
   @include smartphone-portrait {
     width: 280px;
@@ -220,6 +219,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    z-index: 2;
   }
 
   .bt-sc-bg {
@@ -229,7 +229,7 @@ body {
     top: 20px;
     left: 20px;
     line-height: 1;
-    z-index: -1;
+    z-index: 1;
     background-color: $cream-yellow;
   }
 }
@@ -321,23 +321,23 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: $background-colour;
   z-index: 10;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .modalOpen {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   visibility: 1;
 
   & + span {
     height: 64px;
     width: 64px;
     border-radius: 50%;
-    position: relative;
+    position: fixed;
+    right: 24px;
     z-index: 20;
     display: inline-flex;
     align-items: center;
@@ -366,4 +366,16 @@ body {
 .modalclose {
   display: none;
   visibility: 0;
+}
+
+.nav-modal-content {
+  .links {
+    flex-direction: column;
+    column-gap: 0;
+    row-gap: 88px;
+    transform: translateY(-64px);
+    .item {
+      font-size: 3.6rem;
+    }
+  }
 }
