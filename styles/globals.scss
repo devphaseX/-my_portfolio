@@ -73,13 +73,6 @@ body {
     .item:not(:last-child) {
       margin-right: 40px;
     }
-
-    @supports (column-gap: 1em) {
-      column-gap: 40px;
-      .item:not(:last-child) {
-        margin-right: 0;
-      }
-    }
   }
 
   .item {
@@ -103,27 +96,12 @@ body {
   flex-direction: column;
   align-items: center;
   & > *:not(:last-child) {
-    margin-right: 116px;
-  }
-
-  @supports (row-gap: 1em) {
-    row-gap: 116px;
-    & > *:not(:last-child) {
-      margin-right: 0px;
-    }
+    margin-bottom: 116px;
   }
 
   @include smartphone-portrait {
     & > *:not(:last-child) {
-      margin-right: 96px;
-    }
-
-    @supports (row-gap: 1em) {
-      row-gap: 96px;
-
-      & > *:not(:last-child) {
-        margin-right: 0;
-      }
+      margin-bottom: 96px;
     }
   }
 
@@ -213,13 +191,6 @@ body {
       & > *:not(:last-child) {
         margin-bottom: 124px;
       }
-
-      @supports (column-gap: 1em) {
-        row-gap: 124px;
-        & > *:not(:last-child) {
-          margin-bottom: 0;
-        }
-      }
     }
 
     @include smartphone-portrait {
@@ -229,13 +200,6 @@ body {
       @include column-arranged;
       & > *:not(:last-child) {
         margin-bottom: 96px;
-      }
-
-      @supports (column-gap: 1em) {
-        row-gap: 96px;
-        & > *:not(:last-child) {
-          margin-bottom: 0;
-        }
       }
     }
   }
@@ -289,13 +253,6 @@ body {
     flex-direction: column;
     & > *:not(:last-child) {
       margin-right: 4px;
-    }
-
-    @supports (row-gap: 1px) {
-      row-gap: 4px;
-      & > *:not(:last-child) {
-        margin-right: 0;
-      }
     }
   }
 }
@@ -436,14 +393,6 @@ body {
 
     & > *:not(:last-child) {
       margin-bottom: 88px;
-    }
-
-    @supports (column-gap: 1em) {
-      row-gap: 88px;
-
-      *:not(:last-child) {
-        margin-bottom: 0;
-      }
     }
   }
 }
