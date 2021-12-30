@@ -272,6 +272,10 @@ body {
     @include smartphone-portrait {
       margin-top: 80px;
     }
+
+    @include smaller-smartphone-portrait {
+      font-size: 2rem;
+    }
   }
 
   .contact {
