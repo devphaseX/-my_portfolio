@@ -17,9 +17,10 @@ const About: FC = () => {
         Lagos, Nigeria.I am passionate about building web
         solution.Over the last 2 years, I have equiped
         myself with industrial training by partaking in
-        internship at hngintern and sidehustle internship
-        program.During the period of training, I am chanced
-        to have worked with amazing people.
+        internship programs,at hngintern and sidehustle
+        internship .During the cause of training, I have
+        priviledge chanced to have worked with amazing
+        people.
       </p>
       <div className="about-contact">
         <Button href="">Download Resume</Button>
