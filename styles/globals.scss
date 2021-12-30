@@ -102,26 +102,26 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  *:not(:last-child) {
+  & > *:not(:last-child) {
     margin-right: 116px;
   }
 
   @supports (row-gap: 1em) {
     row-gap: 116px;
-    *:not(:last-child) {
+    & > *:not(:last-child) {
       margin-right: 0px;
     }
   }
 
   @include smartphone-portrait {
-    *:not(:last-child) {
+    & > *:not(:last-child) {
       margin-right: 96px;
     }
 
     @supports (row-gap: 1em) {
       row-gap: 96px;
 
-      *:not(:last-child) {
+      & > *:not(:last-child) {
         margin-right: 0;
       }
     }
@@ -210,13 +210,13 @@ body {
 
     @include tablet-portrait {
       @include column-arranged;
-      *:not(:last-child) {
+      & > *:not(:last-child) {
         margin-bottom: 124px;
       }
 
       @supports (column-gap: 1em) {
         row-gap: 124px;
-        *:not(:last-child) {
+        & > *:not(:last-child) {
           margin-bottom: 0;
         }
       }
@@ -224,17 +224,18 @@ body {
 
     @include smartphone-portrait {
       @include column-arranged;
-      row-gap: 96px;
       margin-bottom: 196px;
 
       @include column-arranged;
-      *:not(:last-child) {
-        margin-bottom: 124px;
+      & > *:not(:last-child) {
+        margin-bottom: 96px;
       }
 
       @supports (column-gap: 1em) {
-        row-gap: 124px;
-        margin-bottom: 0;
+        row-gap: 96px;
+        & > *:not(:last-child) {
+          margin-bottom: 0;
+        }
       }
     }
   }
@@ -286,7 +287,16 @@ body {
   a {
     display: inline-flex;
     flex-direction: column;
-    row-gap: 4px;
+    & > *:not(:last-child) {
+      margin-right: 4px;
+    }
+
+    @supports (row-gap: 1px) {
+      row-gap: 4px;
+      & > *:not(:last-child) {
+        margin-right: 0;
+      }
+    }
   }
 }
 
@@ -423,22 +433,15 @@ body {
     .item {
       font-size: 3.6rem;
     }
-    @supports (column-gap: 1em) {
-      column-gap: 0;
-    }
 
-    *:not(:last-child) {
-      margin-right: 0;
-    }
-
-    .item:not(:last-child) {
+    & > *:not(:last-child) {
       margin-bottom: 88px;
     }
 
-    @supports (row-gap: 1em) {
+    @supports (column-gap: 1em) {
       row-gap: 88px;
 
-      .item:not(:last-child) {
+      *:not(:last-child) {
         margin-bottom: 0;
       }
     }
