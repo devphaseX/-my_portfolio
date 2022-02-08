@@ -13,20 +13,18 @@ const About: FC = () => {
         About me<sup>*</sup>
       </h2>
       <p className="info">
-        I am Ayomide, Fullstack web developer based in
-        Lagos, Nigeria.I am passionate about building web
-        solution.Over the last 2 years, I have equiped
-        myself with industrial training by partaking in
-        internship programs,at hngintern and sidehustle
-        internship .During the cause of training, I have
-        priviledge chanced to have worked with amazing
-        people.
+        Hey!, It's Ayomide, a frontend developer, dev advocate fully based in
+        Lagos, Nigeria. I'm passionate about building enrich web experience, a
+        core member of the oou(Olabisi Onabanjo state University) developer's
+        club. Having equiped with in dept frontend knowledge, I'm able to build
+        in house tools which has helped in my ability to create highly scable
+        web product.During my free, I also tech people how to code at school.
+        Over the years, I've built a number of Web application using technology
+        like Node js, Next js, Typescript, Mongodb, Graphql.
       </p>
       <div className="about-contact">
         <Button href="">Download Resume</Button>
-        <Button
-          href={gitContact ? gitContact.profileUrl : ''}
-        >
+        <Button href={gitContact ? gitContact.profileUrl : ''}>
           Check github
         </Button>
       </div>

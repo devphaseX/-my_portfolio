@@ -3,10 +3,8 @@ import { FC } from 'react';
 const Heroes: FC = () => {
   return (
     <div className="hero">
-      Hello, Ayo here, a creative web developer, computer
-      engineering undergraduate based in Lagos~Nigeria.I am
-      passionate about building web solutions and also teach
-      and talk about web technology.
+      A creative web developer, Computer Engineering undergraduate, equip with
+      top notch skills in building accessible, beautiful enriched web product.
     </div>
   );
 };
