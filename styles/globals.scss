@@ -124,6 +124,7 @@ body {
 .hero {
   @include header-1;
   grid-column: 1/-1;
+  text-transform: capitalize;
 
   @include tablet-portrait {
     font-size: 5.4rem;
