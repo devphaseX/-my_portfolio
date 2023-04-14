@@ -1,0 +1,101 @@
+//colour and background colour
+$background-colour: #fcf9f2;
+$cream-yellow: #f3ff9e;
+
+//text and font format
+@mixin header-1 {
+  font-size: 8.1rem;
+  line-height: 1.5;
+  font-weight: 200;
+  @include smartphone-portrait() {
+    font-size: 3.6rem;
+  }
+}
+
+@mixin header-2 {
+  font-size: 8.1rem;
+  line-height: 1;
+  font-weight: 200;
+  @content;
+}
+
+@mixin header-3 {
+  font-size: 6.4rem;
+  line-height: 72px;
+  font-weight: 200;
+  @include smartphone-portrait() {
+    font-size: 2.4rem;
+  }
+}
+
+@mixin header-4 {
+  font-size: 5.4rem;
+  line-height: 1.2;
+  font-weight: normal;
+  @include smartphone-portrait() {
+    font-size: 3.6rem;
+  }
+}
+
+@mixin body-text-1 {
+  font-size: 3.6rem;
+  line-height: 2;
+  font-weight: 200;
+  @include smartphone-portrait {
+    font-size: 1.8rem;
+  }
+}
+
+@mixin body-text-2 {
+  font-size: 2.4rem;
+  line-height: 40px;
+  font-weight: normal;
+}
+
+@mixin body-text-3 {
+  font-size: 2rem;
+  line-height: 32px;
+  font-weight: normal;
+}
+
+@mixin body-text-4 {
+  font-size: 1.6rem;
+  line-height: 24px;
+  font-weight: lighter;
+}
+
+//grid
+
+@mixin layoutGrid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 16px;
+
+  @include smartphone-portrait() {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@mixin responsive($screenWidth, $orentiation) {
+  @media screen and (orientation: $orentiation) and (max-width: $screenWidth) {
+    @content;
+  }
+}
+
+@mixin smartphone-portrait {
+  @include responsive(50.2em, portrait) {
+    @content;
+  }
+}
+
+@mixin tablet-portrait {
+  @include responsive(102.4em, portrait) {
+    @content;
+  }
+}
+
+@mixin smaller-smartphone-portrait {
+  @include responsive(41.4em, portrait) {
+    @content;
+  }
+}
