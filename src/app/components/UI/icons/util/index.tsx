@@ -40,4 +40,7 @@ function computeIconDimension({ height, size, width }: IconDimension) {
   return { heigth: _height, width: _width };
 }
 
-export { computeIconDimension };
+const resolveIconType = (type: string | React.ReactNode) =>
+  typeof type === 'string' ? <img src={type} alt="icon" /> : type;
+
+export { computeIconDimension, resolveIconType };
