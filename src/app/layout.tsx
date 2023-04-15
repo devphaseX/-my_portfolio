@@ -1,4 +1,5 @@
 import localfont from 'next/font/local';
+import '@/style/main.css';
 import './globals.css';
 
 export const metadata = {
