@@ -1,0 +1,44 @@
+:root {
+  --layout-padding: 38px;
+  --layout-radius: 60px;
+  --grid-col: repeat(12, 1fr);
+  --grid-row: repeat(10, 1fr);
+  --grid-col-gutter: 18px;
+  --grid-row-gutter: 24px;
+  --grid-gutter: var(--grid-row-gutter) / var(--grid-col-gutter);
+  --intro-area: 1 / 1 / span 5 / span 6;
+  --profile-img-area: 1 / 7 / span 5 / span 3;
+  --profile-name-area: 1 / -4 / span 1 / -1;
+  --resume-area: 2 / -4 / span 3 / -1;
+  --location-area: -2 / -4 / -1 / -1;
+  --project-area: 6 / 1 / -1 / span 7;
+  --about-aree: 6 / 7 / -1/ -1;
+}
+
+.intro-part {
+  grid: var(--intro-area);
+}
+
+.profile-img-part {
+  grid: var(--profile-img-area);
+}
+
+.profile-name-part {
+  grid: var(--profile-name-area);
+}
+
+.resume-part {
+  grid: var(--resume-area);
+}
+
+.location-part {
+  grid: var(--location-area);
+}
+
+.project-part {
+  grid: var(--project-area);
+}
+
+.about-part {
+  grid: var(--about-aree);
+}
