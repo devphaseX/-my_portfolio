@@ -17,6 +17,7 @@ button {
   background-color: transparent;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 button:focus {
@@ -37,4 +38,5 @@ img {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }

@@ -13,12 +13,12 @@ const socialLinks = [
   {
     platformIcon: <GitHubIcon size={20} />,
     platformName: 'Github',
-    profileLink: '',
+    profileLink: 'https://github.com/devphaseX/',
   },
   {
     platformIcon: <LinkedInIcon size={20} />,
     platformName: 'LinkedIn',
-    profileLink: '',
+    profileLink: 'https://www.linkedin.com/in/ayomidelawal',
   },
   {
     platformIcon: <TwitterIcon size={20} />,
