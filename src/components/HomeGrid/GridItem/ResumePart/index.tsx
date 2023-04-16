@@ -3,8 +3,8 @@ import '@/style/resume.part.css';
 import {
   TSocialLink,
   resumePartLinks,
-} from '@/app/components/UI/socials/data.info';
-import { resolveIconType } from '@/app/components/UI/icons';
+} from '@/components/UI/socials/data.info';
+import { resolveIconType } from '@/components/UI/icons';
 
 const ResumePart: React.FC = () => {
   return (

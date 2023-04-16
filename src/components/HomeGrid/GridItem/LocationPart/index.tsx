@@ -1,4 +1,4 @@
-import { MarkDownIcon } from '@/app/components/UI/icons/';
+import { MarkDownIcon } from '@/components/UI/icons/';
 import React from 'react';
 
 const LocationPart: React.FC = () => {

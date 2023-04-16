@@ -1,8 +1,8 @@
 'use client';
 import React, { useMemo } from 'react';
 import { projects } from './data';
-import { Header } from '@/app/components/UI/Header';
-import { ChevronRightIcon } from '@/app/components/UI/icons/ChevronRight';
+import { Header } from '@/components/UI/Header';
+import { ChevronRightIcon } from '@/components/UI/icons/ChevronRight';
 
 const ProjectPart: React.FC = () => {
   const [firstProject] = useMemo(() => projects, []);

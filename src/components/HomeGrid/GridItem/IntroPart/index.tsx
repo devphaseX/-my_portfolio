@@ -1,5 +1,5 @@
-import { LetTalkButton } from '@/app/components/UI/button/Button';
-import { ReachOutMedia } from '@/app/components/UI/socials';
+import { LetTalkButton } from '@/components/UI/button/Button';
+import { ReachOutMedia } from '@/components/UI/socials';
 import React from 'react';
 
 const IntroPart: React.FC = () => {

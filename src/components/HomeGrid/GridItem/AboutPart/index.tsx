@@ -1,4 +1,4 @@
-import { Header } from '@/app/components/UI/Header';
+import { Header } from '@/components/UI/Header';
 import React from 'react';
 
 const AboutPart: React.FC = () => {
