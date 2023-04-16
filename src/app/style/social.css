@@ -1,0 +1,10 @@
+.social-link__list {
+  column-gap: 16px;
+}
+
+.social-link__item {
+  width: 64px;
+  height: 64px;
+  border: 1px solid var(--border-dark);
+  border-radius: 50%;
+}
