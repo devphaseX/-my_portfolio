@@ -11,7 +11,7 @@ const ResumePart: React.FC = () => {
     <div className="resume-part">
       <div className="resume-part-content">
         <div className="resume-part-tag flex">
-          <div className="resume-part__label flex">
+          <div className="resume-part__label-1">
             <h4 className="sm-2-md">Resume</h4>
           </div>
           <div className="resume-part__label-2 flex center sm-4-md">Skill</div>

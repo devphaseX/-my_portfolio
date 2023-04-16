@@ -1,0 +1,43 @@
+.resume-part-content {
+  padding-block: 24px 31px;
+  padding-inline: 18px;
+}
+
+.resume-part-tag {
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-dark);
+  padding-bottom: 16px;
+}
+
+.resume-part__label-1 {
+  color: var(--text-1);
+}
+
+.resume-part__label-2 {
+  background-color: var(--primary-color);
+  width: 49px;
+  height: 32px;
+  border-radius: 40px;
+}
+
+.resume-part-resource {
+  padding-top: 24px;
+}
+
+.resume-resource-list {
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.resume-resource-item {
+  background-color: var(--black);
+  padding-block: 19px;
+  border-radius: 64px;
+}
+
+.resume-item__content {
+  color: var(--text-1);
+  column-gap: 16px;
+  vertical-align: middle;
+}

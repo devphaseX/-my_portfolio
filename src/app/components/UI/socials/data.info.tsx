@@ -1,4 +1,5 @@
 import { GitHubIcon, LinkedInIcon, TwitterIcon } from '../icons';
+import { DownloadIcon } from '../icons/Download';
 import { MarkDownIcon } from '../icons/Markdown';
 
 interface TSocialLink {
@@ -28,7 +29,7 @@ const socialLinks = [
 
 const resumePartLinks = [
   {
-    platformIcon: <MarkDownIcon size={20} />,
+    platformIcon: <DownloadIcon size={20} />,
     platformName: 'Download Resume',
     profileLink: '',
     download: true,
