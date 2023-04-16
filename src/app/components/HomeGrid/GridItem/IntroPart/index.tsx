@@ -1,17 +1,30 @@
+import { LetTalkButton } from '@/app/components/UI/button/Button';
+import { ReachOutMedia } from '@/app/components/UI/socials';
 import React from 'react';
 
 const IntroPart: React.FC = () => {
   return (
     <div className="intro-part">
-      <div>
-        <div>
-          <h1>Creative Web developer based in Lagos</h1>
+      <div className="intro-part-content flex">
+        <div className="intro-part__title">
+          <h1 className="lg-1-md">
+            Creative
+            <br /> Web developer
+            <br /> based in Lagos
+          </h1>
         </div>
-        <div>
-          <div>
-            <p>Feel free to connect with me</p>
+        <div className="connect-with">
+          <div className="connect-width__label">
+            <p className="sm-3-md">Feel free to connect with me</p>
           </div>
-          <div></div>
+          <div className="connect-buttons flex">
+            <div>
+              <ReachOutMedia />
+            </div>
+            <div>
+              <LetTalkButton />
+            </div>
+          </div>
         </div>
       </div>
     </div>

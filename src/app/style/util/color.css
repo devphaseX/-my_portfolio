@@ -15,4 +15,10 @@
 
   --layout-bg-color: var(--black);
   --grid-item-bg-color: var(--black-3);
+  --primary-color: var(--purple);
+  --text-1: var(--white);
+  --text-2: var(--dark-grey-2);
+  --text-3: var(--dark-grey-3);
+
+  --border-dark: var(--dark-grey-1);
 }

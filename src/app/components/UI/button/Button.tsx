@@ -1,4 +1,7 @@
+import { mergeClass } from '@/lib';
 import { resolveIconType } from '../icons/util';
+import '@/style/button.css';
+import { MessageIcon } from '../icons/Mesage';
 
 type PrimaryButtonProps = {
   icon?: string | React.ReactNode;
@@ -18,15 +21,27 @@ type PrimaryButtonProps = {
 const PrimaryButton: React.FC<PrimaryButtonProps> = ({
   type: _,
   icon,
-  iconLeft,
+  iconLeft = true,
   iconRight,
+  className,
   children,
   ...props
 }) => (
-  <button type="button" {...props}>
+  <button
+    type="button"
+    className={mergeClass('primary-button', className ?? '')}
+    {...props}
+    style={{ flexDirection: iconLeft ? 'initial' : 'row-reverse' }}
+  >
     {icon ? <span>{resolveIconType(icon)}</span> : null}
     <span>{children}</span>
   </button>
 );
 
-export { PrimaryButton };
+const LetTalkButton = () => (
+  <PrimaryButton icon={<MessageIcon />} className="sm-3-bd">
+    Let's Talk
+  </PrimaryButton>
+);
+
+export { PrimaryButton, LetTalkButton };

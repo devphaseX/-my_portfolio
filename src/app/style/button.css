@@ -1,0 +1,8 @@
+.primary-button {
+  background-color: var(--primary-color);
+  color: var(--text-1);
+  column-gap: 12px;
+  width: 165px;
+  height: 64px;
+  border-radius: 48px;
+}

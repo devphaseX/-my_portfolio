@@ -1,6 +1,6 @@
 import localfont from 'next/font/local';
-import '@/style/main.css';
 import './globals.css';
+import './style/home.css';
 
 export const metadata = {
   title: 'Ayo Folio',
