@@ -25,7 +25,10 @@ const ResumePart: React.FC = () => {
                 profileLink,
                 download,
               }: TSocialLink) => (
-                <li className="resume-resource-item">
+                <li
+                  className="resume-resource-item"
+                  key={`${platformName}:${profileLink}`}
+                >
                   <a
                     href={profileLink}
                     download={download}
