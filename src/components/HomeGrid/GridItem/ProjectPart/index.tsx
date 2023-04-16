@@ -1,11 +1,13 @@
 'use client';
 import React, { useMemo } from 'react';
-import { projects } from './data';
+import { useRouter } from 'next/navigation';
+import { projects } from '../../../../app/projects/data';
 import { Header } from '@/components/UI/Header';
 import { ChevronRightIcon } from '@/components/UI/icons/ChevronRight';
 
 const ProjectPart: React.FC = () => {
   const [firstProject] = useMemo(() => projects, []);
+  const router = useRouter();
   return (
     <div className="project-part">
       <div className="project-part-content">
@@ -27,7 +29,10 @@ const ProjectPart: React.FC = () => {
             <button className="view__button flex center sm-3-ebd">
               <div className="view__content flex-inline">
                 <p className="view__label">See all projects</p>
-                <div className="view__icon flex center">
+                <div
+                  className="view__icon flex center"
+                  onClick={() => router.push('/projects')}
+                >
                   <ChevronRightIcon width={22} height={14} />
                 </div>
               </div>

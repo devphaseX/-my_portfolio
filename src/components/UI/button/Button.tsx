@@ -21,7 +21,7 @@ type PrimaryButtonProps = {
 const PrimaryButton: React.FC<PrimaryButtonProps> = ({
   type: _,
   icon,
-  iconLeft = true,
+  iconLeft,
   iconRight,
   className,
   children,
@@ -31,7 +31,12 @@ const PrimaryButton: React.FC<PrimaryButtonProps> = ({
     type="button"
     className={mergeClass('primary-button', className ?? '')}
     {...props}
-    style={{ flexDirection: iconLeft ? 'initial' : 'row-reverse' }}
+    style={{
+      flexDirection:
+        iconLeft === undefined && iconLeft === iconRight
+          ? 'initial'
+          : 'row-reverse',
+    }}
   >
     {icon ? <span>{resolveIconType(icon)}</span> : null}
     <span>{children}</span>

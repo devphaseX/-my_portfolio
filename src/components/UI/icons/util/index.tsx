@@ -23,7 +23,7 @@ function computeIconDimension({ height, size, width }: IconDimension) {
         ? `${size}px`
         : size
       : typeofWidth == 'number'
-      ? `${typeofWidth}px`
+      ? `${width}px`
       : width;
 
   const _height =
@@ -37,7 +37,7 @@ function computeIconDimension({ height, size, width }: IconDimension) {
       ? `${height}px`
       : height;
 
-  return { heigth: _height, width: _width };
+  return { height: _height, width: _width };
 }
 
 const resolveIconType = (type: string | React.ReactNode) =>

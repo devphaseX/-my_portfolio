@@ -1,0 +1,37 @@
+.project {
+  background-color: var(--black);
+}
+
+.project__wrapper {
+  padding-inline: 40px;
+  padding-block: 90px 68px;
+}
+
+.project-tag {
+  justify-content: center;
+}
+
+.project-label {
+  margin-top: 40px;
+}
+
+.project-info {
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-return {
+  width: 56px;
+  height: 56px;
+  border: 1px solid var(--dark-grey-5);
+  border-radius: 50%;
+}
+
+.project__content {
+  margin-top: 132px;
+}
+
+.project-list {
+  flex-direction: column;
+  row-gap: 100px;
+}
