@@ -118,3 +118,14 @@
   background-color: var(--white);
   border-radius: 50%;
 }
+
+.about-part-content {
+  padding-inline: 48px;
+  padding-top: 48px;
+  height: 100%;
+}
+
+.about-detail {
+  color: var(--light-grey-1);
+  margin-top: 32px;
+}
