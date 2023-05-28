@@ -13,6 +13,7 @@
   font-size: var(--lg-1);
   line-height: 78px;
   font-weight: 500;
+  font-weight: bold;
 }
 
 .lg-2-md {
@@ -25,6 +26,7 @@
   font-size: var(--md-1);
   line-height: 32px;
   font-weight: 500;
+  font-weight: bold;
 }
 
 .md-2-md {

@@ -1,4 +1,4 @@
-import { IconTypeProps } from './@types';
+import { IconDimension, IconTypeProps } from './@types';
 import { computeIconDimension } from './util';
 
 const ChevronLeftIcon: React.FC<IconTypeProps> = ({ height, size, width }) => {
@@ -8,7 +8,7 @@ const ChevronLeftIcon: React.FC<IconTypeProps> = ({ height, size, width }) => {
         display: 'inline-flex',
         justifyContent: 'center',
         alignItems: 'center',
-        ...computeIconDimension({ height, size, width }),
+        ...computeIconDimension({ height, size, width } as IconDimension),
       }}
     >
       <svg
