@@ -131,7 +131,7 @@
   margin-top: 32px;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 500px) {
   .intro-part .connect-buttons {
     flex-direction: column;
     row-gap: 32px;
@@ -176,7 +176,12 @@
     padding-block: 42px 80px;
     height: 100%;
   }
+
   .location-part-content {
     padding-block: 32px;
+  }
+
+  .project-part-content {
+    padding: 32px 24px;
   }
 }

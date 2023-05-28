@@ -76,7 +76,7 @@
   position: absolute;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 500px) {
   div.project-card {
     padding: 0;
     --item-b-r: 24px;

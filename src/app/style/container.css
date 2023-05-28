@@ -9,7 +9,7 @@
   min-height: var(--layout-height);
 }
 
-@media (max-width: 415px) {
+@media (max-width: 500px) {
   .layout-container {
     padding-bottom: 32px;
   }

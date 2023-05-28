@@ -36,7 +36,7 @@
   row-gap: 100px;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 500px) {
   .project__wrapper {
     padding-block: 48px 24px;
     padding-inline: 19px;
@@ -49,6 +49,7 @@
   .project__content {
     margin-top: 64px;
   }
+
   .project-list {
     row-gap: 40px;
   }

@@ -64,7 +64,7 @@
   border-radius: 40px;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 500px) {
   :root {
     --grid-template-area: 'profile-name' 'intro' 'project' 'about' 'profile-img'
       'resume' 'location';
@@ -84,5 +84,9 @@
     grid-template-areas: var(--grid-template-area);
     grid-auto-flow: row;
     column-gap: unset;
+  }
+
+  .project-part {
+    border-radius: 32px;
   }
 }
