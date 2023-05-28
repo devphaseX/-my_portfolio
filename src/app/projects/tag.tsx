@@ -1,5 +1,4 @@
 'use client';
-
 import { Header } from '@/components/UI/Header';
 import { ChevronLeftIcon } from '@/components/UI/icons/ChevronLeft';
 import { useRouter } from 'next/navigation';

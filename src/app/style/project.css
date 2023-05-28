@@ -35,3 +35,21 @@
   flex-direction: column;
   row-gap: 100px;
 }
+
+@media (max-width: 415px) {
+  .project__wrapper {
+    padding-block: 48px 24px;
+    padding-inline: 19px;
+  }
+
+  .project-label {
+    margin-top: 24px;
+  }
+
+  .project__content {
+    margin-top: 64px;
+  }
+  .project-list {
+    row-gap: 40px;
+  }
+}

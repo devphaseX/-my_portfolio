@@ -17,7 +17,7 @@ const AboutPart: React.FC = () => {
             experience, I’m currently based in Lagos, Nigeria. I’m a computer
             engineering student in my final year of my bachealor degree programa
             computer engineering student in my final year of my bachealor degree
-            programa computer e
+            programa computer
           </p>
         </div>
       </div>

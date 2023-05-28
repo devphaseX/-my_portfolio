@@ -8,3 +8,9 @@
   height: 100%;
   min-height: var(--layout-height);
 }
+
+@media (max-width: 415px) {
+  .layout-container {
+    padding-bottom: 32px;
+  }
+}

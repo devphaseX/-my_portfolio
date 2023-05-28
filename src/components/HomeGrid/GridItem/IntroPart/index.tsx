@@ -10,7 +10,7 @@ const IntroPart: React.FC = () => {
           <h1 className="lg-1-md">
             Creative
             <br /> Web developer
-            <br /> based in Lagos
+            <br /> based in Lagos, Nigeria
           </h1>
         </div>
         <div className="connect-with">

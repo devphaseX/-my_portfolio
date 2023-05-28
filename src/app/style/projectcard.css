@@ -28,7 +28,7 @@
 
 .project-card__modal {
   height: 304px;
-  background-color: var(--black);
+  background-color: var(--black-3);
   padding: 60px;
   width: 100%;
   border-radius: 60px;
@@ -60,7 +60,7 @@
   display: inline-block;
 }
 
-.project-card__list {
+.project-card-tag__list {
   column-gap: 16px;
 }
 
@@ -74,4 +74,51 @@
   border-radius: 50%;
   color: var(--text-1);
   position: absolute;
+}
+
+@media (max-width: 415px) {
+  div.project-card {
+    padding: 0;
+    --item-b-r: 24px;
+    display: block;
+    border-radius: 0;
+    height: auto;
+  }
+
+  .project-card__tag {
+    width: 48px;
+    height: 48px;
+  }
+
+  .project-card__image {
+    position: relative;
+    border-radius: var(--item-b-r);
+    overflow: hidden;
+    height: 196px;
+  }
+
+  .project-card__modal {
+    padding: 24px;
+    height: auto;
+    border-radius: var(--item-b-r);
+    margin-top: 8px;
+  }
+
+  .project-card__item {
+    flex-direction: column;
+  }
+
+  .project-card__tech {
+    margin-bottom: 24px;
+  }
+
+  .project-card__tech-tag {
+    width: 92px;
+    height: 40px;
+  }
+
+  .project-card-tag__list {
+    flex-wrap: wrap;
+    row-gap: 16px;
+  }
 }

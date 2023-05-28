@@ -1,3 +1,4 @@
+'use client';
 import { mergeClass } from '@/lib';
 import { resolveIconType } from '../icons/util';
 import '@/style/button.css';

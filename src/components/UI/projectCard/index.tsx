@@ -1,3 +1,5 @@
+'use client';
+
 import { ProjectData } from '@/app/projects/data';
 import { PrimaryButton } from '../button/Button';
 import { ChevronRightCircle } from '../icons/ChevronRightCircle';
@@ -33,9 +35,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 </div>
                 <div className="project-card__tech">
                   <div>
-                    <ul className="project-card__list flex">
+                    <ul className="project-card-tag__list flex">
                       {technologyTags.map((tag) => (
-                        <li className="project-card__tech-tag flex center sm-2-md">
+                        <li
+                          key={tag}
+                          className="project-card__tech-tag flex center sm-2-md"
+                        >
                           <span>{tag}</span>
                         </li>
                       ))}

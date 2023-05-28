@@ -16,12 +16,14 @@ export default function Home() {
         <ContentContainer>
           <HomeGrid>
             <IntroPart />
-            <ProfileImgPart />
             <ProfileNamePart />
-            <ResumePart />
-            <LocationPart />
             <ProjectPart />
             <AboutPart />
+            <ProfileImgPart />
+            <ResumePart />
+            <LocationPart />
+            {/*
+             */}
           </HomeGrid>
         </ContentContainer>
       </LayoutContainer>
