@@ -1,6 +1,6 @@
-const mergeClass = (...classNames: string[]) =>
+const mergeClass = (...classNames: (string | undefined)[]) =>
   classNames
-    .map((name) => name.trim())
+    .map((name) => name && name.trim())
     .join(' ')
     .trim();
 

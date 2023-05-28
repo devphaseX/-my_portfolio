@@ -4,6 +4,7 @@ import { ProjectData } from '@/app/projects/data';
 import { PrimaryButton } from '../button/Button';
 import { ChevronRightCircle } from '../icons/ChevronRightCircle';
 import '@/style/projectcard.css';
+import Image from 'next/image';
 interface ProjectCardProps extends ProjectData {
   index: number;
 }
@@ -68,4 +69,25 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   );
 };
 
-export { ProjectCard };
+const ShowcaseProjectCard: React.FC<ProjectData> = ({
+  bannerImgUrl,
+  title,
+  link: { repo, live },
+}) => (
+  <div className="showcase-project-card">
+    <div className="showcase-card-img">
+      <Image src={bannerImgUrl} alt={title} width={100} height={100} />
+    </div>
+    <div className="showcase-card-actions">
+      {live && (
+        <a href={live}>
+          <PrimaryButton icon={<ChevronRightCircle size={19} />} iconRight>
+            visit site
+          </PrimaryButton>
+        </a>
+      )}
+    </div>
+  </div>
+);
+
+export { ProjectCard, ShowcaseProjectCard };

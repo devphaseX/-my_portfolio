@@ -1,4 +1,5 @@
 import { Header } from '@/components/UI/Header';
+import { ArrowButton } from '@/components/UI/button/ArrowButton';
 import React from 'react';
 
 const AboutPart: React.FC = () => {
@@ -19,6 +20,9 @@ const AboutPart: React.FC = () => {
             computer engineering student in my final year of my bachealor degree
             programa computer
           </p>
+          <div className="about-read-more">
+            <ArrowButton to="/about-me" fill direction={{ rtl: true }} />
+          </div>
         </div>
       </div>
     </div>

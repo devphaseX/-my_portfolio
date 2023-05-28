@@ -1,13 +1,13 @@
 'use client';
 import React, { useMemo } from 'react';
-import { useRouter } from 'next/navigation';
-import { projects } from '../../../../app/projects/data';
+import { showcaseProjects } from '../../../../app/projects/data';
 import { Header } from '@/components/UI/Header';
-import { ChevronRightIcon } from '@/components/UI/icons/ChevronRight';
+import { ShowcaseProjectCard } from '@/components/UI/projectCard';
+import { ArrowButton } from '@/components/UI/button/ArrowButton';
 
 const ProjectPart: React.FC = () => {
-  const [firstProject] = useMemo(() => projects, []);
-  const router = useRouter();
+  const projects = useMemo(() => showcaseProjects, []);
+
   return (
     <div className="project-part">
       <div className="project-part-content">
@@ -18,23 +18,15 @@ const ProjectPart: React.FC = () => {
           </span>
         </div>
         <div className="showcase-project">
-          <div className="showcase-listing">
-            <div className="showcase__item">
-              <div>
-                <img src={firstProject.bannerImgUrl} alt={firstProject.title} />
-              </div>
-            </div>
-          </div>
+          {projects.map((project) => (
+            <ShowcaseProjectCard key={project.id} {...project} />
+          ))}
+
           <div className="view-projects">
             <button className="view__button flex center sm-3-ebd">
               <div className="view__content flex-inline">
                 <p className="view__label">See all projects</p>
-                <div
-                  className="view__icon flex center"
-                  onClick={() => router.push('/projects')}
-                >
-                  <ChevronRightIcon width={22} height={14} />
-                </div>
+                <ArrowButton to="/projects" fill direction={{ rtl: true }} />
               </div>
             </button>
           </div>

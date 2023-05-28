@@ -10,6 +10,18 @@ interface ProjectData {
   };
 }
 
+const showcaseProjects: Array<ProjectData> = [
+  {
+    id: 1,
+    title: 'Payeasy',
+    description:
+      'An online platform that allow people to learn how to code anytime, anywhere',
+    bannerImgUrl: '/images/project-2.png',
+    technologyTags: ['React.js', 'Typescript', 'Prisma', 'Nodejs'],
+    link: { repo: '', live: 'something' },
+  },
+];
+
 const projects: Array<ProjectData> = [
   {
     id: 1,
@@ -18,7 +30,7 @@ const projects: Array<ProjectData> = [
       'An online platform that allow people to learn how to code anytime, anywhere',
     bannerImgUrl: '/images/project-2.png',
     technologyTags: ['React.js', 'Typescript', 'Prisma', 'Nodejs'],
-    link: { repo: '', live: '' },
+    link: { repo: '', live: 'something' },
   },
   {
     id: 2,
@@ -27,7 +39,7 @@ const projects: Array<ProjectData> = [
       'An online platform that allow people to learn how to code anytime, anywhere',
     bannerImgUrl: '/images/project-1.png',
     technologyTags: ['React.js', 'Typescript', 'Prisma', 'Nodejs'],
-    link: { repo: '', live: '' },
+    link: { repo: '', live: 'something' },
   },
   {
     id: 3,
@@ -36,7 +48,7 @@ const projects: Array<ProjectData> = [
       'An online platform that allow people to learn how to code anytime, anywhere',
     bannerImgUrl: '/images/project-3.png',
     technologyTags: ['React.js', 'Typescript', 'Prisma', 'Nodejs'],
-    link: { repo: '', live: '' },
+    link: { repo: '', live: 'something' },
   },
   {
     id: 4,
@@ -45,7 +57,7 @@ const projects: Array<ProjectData> = [
       'An online platform that allow people to learn how to code anytime, anywhere',
     bannerImgUrl: '/images/project-4.png',
     technologyTags: ['React.js', 'Typescript', 'Prisma', 'Nodejs'],
-    link: { repo: '', live: '' },
+    link: { repo: '', live: 'something' },
   },
   // {
   //   title: 'Vertt',
@@ -57,4 +69,4 @@ const projects: Array<ProjectData> = [
   // },
 ];
 
-export { projects, type ProjectData };
+export { projects, type ProjectData, showcaseProjects };
