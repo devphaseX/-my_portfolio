@@ -69,6 +69,7 @@
     --grid-template-area: 'profile-name' 'intro' 'project' 'about' 'profile-img'
       'resume' 'location';
     --grid-template: unset;
+
     --profile-name-area: profile-name;
     --intro-area: intro;
     --profile-img-area: profile-img;
@@ -76,7 +77,8 @@
     --location-area: location;
     --project-area: project;
     --about-aree: about;
-    --layout-padding: 16px;
+    --layout-padding: 8px;
+    --grid-row-gutter: 12px;
   }
 
   .home-grid {

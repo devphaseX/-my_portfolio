@@ -158,7 +158,6 @@
   }
 
   .intro-part__title h1 {
-    font-weight: 500;
     line-height: 54px;
     font-size: 3.6rem;
   }
@@ -185,7 +184,7 @@
 
   .about-part-content {
     padding-inline: 28px;
-    padding-block: 42px 80px;
+    padding-block: 42px 24px;
     height: 100%;
   }
 
