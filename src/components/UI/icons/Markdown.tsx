@@ -1,4 +1,4 @@
-import { IconTypeProps } from './@types';
+import { IconDimension, IconTypeProps } from './@types';
 import { computeIconDimension } from './util';
 
 const MarkDownIcon: React.FC<IconTypeProps> = ({ height, size, width }) => {
@@ -6,7 +6,7 @@ const MarkDownIcon: React.FC<IconTypeProps> = ({ height, size, width }) => {
     <span
       style={{
         display: 'inline-block',
-        ...computeIconDimension({ height, size, width }),
+        ...computeIconDimension({ height, size, width } as IconDimension),
       }}
     >
       <svg

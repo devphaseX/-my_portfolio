@@ -1,4 +1,4 @@
-import { IconTypeProps } from './@types';
+import { IconDimension, IconTypeProps } from './@types';
 import { computeIconDimension } from './util';
 
 const ChevronRightCircle: React.FC<IconTypeProps> = ({
@@ -10,7 +10,7 @@ const ChevronRightCircle: React.FC<IconTypeProps> = ({
     <span
       style={{
         display: 'inline-block',
-        ...computeIconDimension({ height, size, width }),
+        ...computeIconDimension({ height, size, width } as IconDimension),
       }}
     >
       <svg
